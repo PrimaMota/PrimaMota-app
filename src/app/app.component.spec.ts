@@ -1,8 +1,23 @@
 /* tslint:disable:no-unused-variable */
-
-import { TestBed, async } from '@angular/core/testing';
+import { addProviders, TestBed, async, inject } from '@angular/core/testing';
+//import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
+
+
+describe('App: Angular2FirebaseAuth', () => {
+  beforeEach(() => {
+    addProviders([AppComponent]);
+  });
+
+  it('should create the app',
+    inject([AppComponent], (app: AppComponent) => {
+      expect(app).toBeTruthy();
+    }));
+
+});
+
+/*
 describe('AppComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -32,3 +47,6 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1').textContent).toContain('PrimaMota!');
   }));
 });
+*/
+
+

@@ -11,6 +11,18 @@
     "target": "es5",
     "typeRoots": [
       "../node_modules/@types"
+    ],
+    "lib":[
+      "es6",
+      "dom"
+    ],
+    "mapRoot":"./",
+    "module":"es6",
+    "types":[
+      "firebase",
+      "node",
+      "jasmine"
     ]
   }
 }
+
