@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { AngularFire, FirebaseListObservable, AuthProviders } from 'angularfire2';
+import "../../../../styles.scss";
+import "./login.component.scss";
 
 @Component({
   moduleId: module.id,
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css']
+  selector: 'login-root',
+  templateUrl: 'login.component.html',
+  styleUrls: ['login.component.scss']
 })
-export class AppComponent {
+export class LoginComponent {
   isAuth = false;
   authColor = 'warn';
   user = {};
