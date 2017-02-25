@@ -1,9 +1,9 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './modules/app.component';
-import { HomeComponent } from './modules/components/home/home.component';
-import { AboutComponent } from './modules/components/about/about.component';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
 
 const commonRoutes = [
   {

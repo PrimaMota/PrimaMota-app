@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AngularFire, FirebaseListObservable, AuthProviders } from 'angularfire2';
-import "../../../../styles.scss";
+import "../../../styles.scss";
 import "./login.component.scss";
 
 @Component({

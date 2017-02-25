@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { routing } from '../app.routing';
+import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -17,6 +17,7 @@ import { AngularFireModule, AuthMethods } from 'angularfire2';
 import { MdToolbarModule } from '@angular2-material/toolbar';
 import { MdButtonModule } from '@angular2-material/button';
 import { MdCardModule } from '@angular2-material/card';
+
 
 export let MD_MODULES: any = [
   MdToolbarModule,
@@ -54,6 +55,7 @@ export const firebaseConfig = {
     routing,
     BrowserModule,
     ...MD_MODULES
+
 
 ],
   declarations: [
