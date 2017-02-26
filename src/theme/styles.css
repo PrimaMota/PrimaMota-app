@@ -1,0 +1,31 @@
+body {
+  position: relative;
+  background: #ECEFF1;
+  width: 85%;
+  height: 200px;
+  margin: 20px auto; }
+
+app-root {
+  background: transparent; }
+  app-root.both {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  app-root.horizontal {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); }
+  app-root.vertical {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+
+.section {
+  background: white; }
+
+.white-bg {
+  background: white;
+  width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */

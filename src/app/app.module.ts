@@ -7,17 +7,20 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 
 import { AngularFireModule, AuthMethods } from 'angularfire2';
+
+//import 'materialize-css/dist/css/materialize.min.css';
+import "materialize-css";
+import { MaterializeModule } from 'angular2-materialize/src/index';
 
 // MATERIAL DESIGN MODULES
 import { MdToolbarModule } from '@angular2-material/toolbar';
 import { MdButtonModule } from '@angular2-material/button';
 import { MdCardModule } from '@angular2-material/card';
-
 
 export let MD_MODULES: any = [
   MdToolbarModule,
@@ -40,13 +43,8 @@ export const firebaseConfig = {
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(
-      {
-        apiKey: "AIzaSyBcddvifAEvrdeBZ06pO-JJgJRipPaz5Dw",
-        authDomain: "primamota-bcf62.firebaseapp.com",
-        databaseURL: "https://primamota-bcf62.firebaseio.com",
-        storageBucket: "primamota-bcf62.appspot.com",
-        messagingSenderId: "660357805049"
-      },
+
+      firebaseConfig,
       {
         //method: AuthMethods.Popup,
         method: AuthMethods.Redirect
@@ -54,14 +52,14 @@ export const firebaseConfig = {
     ),
     routing,
     BrowserModule,
+    MaterializeModule,
     ...MD_MODULES
-
 
 ],
   declarations: [
     AppComponent,
-    HomeComponent,
     AboutComponent,
+    HomeComponent,
     LoginComponent
   ],
   providers: [],

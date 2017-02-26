@@ -13,9 +13,27 @@
 Logout
 </button>-->
 
-  <md-toolbar [color]="authColor">
-    <span>Angular2 Auth with AngularFire2</span>
-  </md-toolbar>
+<nav class="light-green lighten-1" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">
+    <img width=63 src="assets/primamota-logo-512.png" /></a>
+    <ul class="right hide-on-med-and-down">
+
+
+      <li>        <button light-green md-raised-button (click)="logout()">
+        Logout
+      </button>
+      </li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li>        <button md-raised-button (click)="logout()">
+        Logout
+      </button>
+      </li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
 
   <section [ngSwitch]="isAuth">
 
@@ -47,17 +65,15 @@ Logout
         <md-card-title>{{ user.name }}</md-card-title>
         <md-card-subtitle>{{ user.email || '(no email)' }}</md-card-subtitle>
       </md-card-header>
-      <img md-card-image src="md-banner.jpg">
+      <div class="row center light-green">&nbsp;</div>
       <md-card-content>
         <p>You are logged in using <strong>{{ user.provider }}</strong></p>
       </md-card-content>
-<!--
-      <md-card-action>
+
         <button md-raised-button (click)="logout()">
           Logout
         </button>
-      </md-card-action>
--->
+
     </md-card>
 
 

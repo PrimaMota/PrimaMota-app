@@ -18,7 +18,8 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "theme/materialize-src/sass/materialize.css",
+        "theme/styles.css"
       ],
       "scripts": [
       ],

@@ -6,7 +6,6 @@ import './polyfills';
 import './vendors';
 
 //enableProdMode();
-
 if (environment.production) {
   enableProdMode();
 }
